@@ -1,4 +1,4 @@
-package com.example.marvelcomicslist.ui.main
+package com.example.marvelcomicslist.ui.viewmodel
 
 import androidx.lifecycle.ViewModel
 
