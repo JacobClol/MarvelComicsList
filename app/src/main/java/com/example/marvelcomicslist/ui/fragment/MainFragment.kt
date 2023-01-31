@@ -1,12 +1,11 @@
 package com.example.marvelcomicslist.ui.fragment
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import com.example.marvelcomicslist.R
 import com.example.marvelcomicslist.databinding.FragmentMainBinding
 import com.example.marvelcomicslist.ui.viewmodel.MainViewModel
@@ -15,13 +14,12 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainFragment : Fragment() {
 
-    private lateinit var viewModel: MainViewModel
+    private val mainViewModel: MainViewModel by activityViewModels()
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

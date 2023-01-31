@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MarvelComicsList</string>
+    <string name="init">Init</string>
+    <string name="data_provided_by_marvel">Data provided by Marvel. © 2014 Marvel</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="image_movie">Image Movie</string>
 </resources>
