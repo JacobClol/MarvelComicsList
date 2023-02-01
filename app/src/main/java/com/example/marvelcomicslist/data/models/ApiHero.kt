@@ -7,8 +7,6 @@ data class ApiHero(
     val id: Int?,
     val name: String?,
     val description: String?,
-    @SerializedName("comics")
-    val dataComicHero: ApiComicResource,
     @SerializedName("thumbnail")
     val imageHero: ApiThumbnail
 ) {
@@ -17,8 +15,7 @@ data class ApiHero(
             id = id,
             name = name,
             description = description,
-            image = imageHero.toImageComic(),
-            comicResource = dataComicHero.collectionURI
+            image = imageHero.toImageComic()
         )
     }
 }
