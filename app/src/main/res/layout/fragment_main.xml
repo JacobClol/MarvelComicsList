@@ -19,6 +19,7 @@
             app:popupTheme="@style/Theme.MarvelComicsList.PopupOverlay" />
 
     <ImageButton
+        android:id="@+id/btnInitMarvel"
         android:src="@drawable/blob"
         android:scaleType="fitXY"
         android:contentDescription="@string/init"
