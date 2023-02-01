@@ -5,9 +5,9 @@ import com.google.gson.annotations.SerializedName
 
 data class ApiComics(
     val id: Int,
-    val title: String,
-    val variantDescription: String,
-    val description: String,
+    val title: String?,
+    val variantDescription: String?,
+    val description: String?,
     @SerializedName("thumbnail")
     val imageComic: ApiThumbnail
 ) {

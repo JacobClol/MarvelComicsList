@@ -1,7 +1,9 @@
 package com.example.marvelcomicslist.di
 
 import com.example.marvelcomicslist.domain.repositories.GetComicsRepository
+import com.example.marvelcomicslist.domain.repositories.CharacterRepository
 import com.example.marvelcomicslist.domain.usecases.GetComicsByHeroUseCase
+import com.example.marvelcomicslist.domain.usecases.GetCharacterUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.Reusable
@@ -17,4 +19,10 @@ class UseCaseModule {
     fun provideGetComicsByHeroUsecase(
         getComicsRepository: GetComicsRepository
     ) = GetComicsByHeroUseCase(getComicsRepository)
+
+    @Provides
+    @Reusable
+    fun provideGetDetailComicUseCse(
+        getCharacterRepository: CharacterRepository
+    ) = GetCharacterUseCase(getCharacterRepository)
 }

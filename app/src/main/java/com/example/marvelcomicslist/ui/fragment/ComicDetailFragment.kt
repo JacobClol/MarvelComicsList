@@ -14,7 +14,9 @@ import com.bumptech.glide.Glide
 import com.example.marvelcomicslist.R
 import com.example.marvelcomicslist.databinding.FragmentComicDetailBinding
 import com.google.android.material.appbar.AppBarLayout
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ComicDetailFragment : Fragment(), AppBarLayout.OnOffsetChangedListener {
 
     private var _binding: FragmentComicDetailBinding? = null
@@ -48,6 +50,11 @@ class ComicDetailFragment : Fragment(), AppBarLayout.OnOffsetChangedListener {
             binding.collapsingToolbar.title = ""
             isShow = false
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     private fun initCollapsingToolbar() {

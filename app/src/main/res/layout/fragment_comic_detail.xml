@@ -32,7 +32,7 @@
                     android:id="@+id/thumbnailHeader"
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
-                    android:contentDescription="@string/image_movie"
+                    android:contentDescription="@string/image_hero"
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
                     app:layout_collapseMode="parallax"

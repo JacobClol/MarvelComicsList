@@ -4,7 +4,7 @@
     <string name="data_provided_by_marvel">Data provided by Marvel. © 2014 Marvel</string>
     <string name="description">Description</string>
     <string name="title">Title</string>
-    <string name="image_movie">Image Movie</string>
+    <string name="image_hero">Image Hero</string>
     <string name="iron_man_button">Iron Man Button</string>
     <string name="thor_button">Thor button</string>
     <string name="hulk_button">Hulk Button</string>
@@ -13,9 +13,10 @@
     <string name="thor">Thor</string>
     <string name="hulk">Hulk</string>
     <string name="captain_america">Captain America</string>
-    <string name="path_remote_image_iron_man">http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55.jpg</string>
-    <string name="path_remote_image_thor">http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350.jpg</string>
-    <string name="path_remote_image_hulk">http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg</string>
-    <string name="path_remote_image_captain_america">http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087.jpg</string>
+    <string name="path_remote_image_iron_man">https://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55/portrait_uncanny.jpg</string>
+    <string name="path_remote_image_thor">https://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350.jpg</string>
+    <string name="path_remote_image_hulk">https://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg</string>
+    <string name="path_remote_image_captain_america">https://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087.jpg</string>
     <string name="variant_description">Variant Description</string>
+    <string name="comic">Comic:</string>
 </resources>

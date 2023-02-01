@@ -5,9 +5,9 @@ import com.google.gson.annotations.SerializedName
 
 data class ApiComicsResponse(
     val code: Int,
-    val status: String,
-    val copyright: String,
-    val attributionText: String,
+    val status: String?,
+    val copyright: String?,
+    val attributionText: String?,
     @SerializedName("data")
     val comics: ApiDataComics
 ) {

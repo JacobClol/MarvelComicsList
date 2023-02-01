@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.example.marvelcomicslist.R
 import com.example.marvelcomicslist.core.base.BaseViewHolder
 import com.example.marvelcomicslist.databinding.ItemComicListBinding
+import com.example.marvelcomicslist.di.GlideApp
 import com.example.marvelcomicslist.domain.models.Comic
 
 class ComicAdapter(
@@ -41,7 +42,7 @@ class ComicAdapter(
     inner class ComicViewHolder(private val itemBinding: ItemComicListBinding) :
         BaseViewHolder<Comic>(itemBinding.root) {
         override fun bind(item: Comic): Unit = with(itemBinding) {
-            Glide.with(context).load(item.image).placeholder(R.drawable.load).into(thumbnail)
+            GlideApp.with(context).load(item.image).placeholder(R.drawable.load).into(thumbnail)
             title.text = item.title
             itemView.setOnClickListener {
                 comicClickListener.onComicClick(item)

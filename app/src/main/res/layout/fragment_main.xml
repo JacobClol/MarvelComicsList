@@ -21,6 +21,7 @@
     <ImageButton
         android:id="@+id/btnInitMarvel"
         android:src="@drawable/blob"
+        android:background="@color/white"
         android:scaleType="fitXY"
         android:contentDescription="@string/init"
         android:layout_width="0dp"

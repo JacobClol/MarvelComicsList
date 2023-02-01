@@ -1,6 +1,8 @@
 package com.example.marvelcomicslist.di
 
+import com.example.marvelcomicslist.data.repositories.GetCharacterRepositoryImpl
 import com.example.marvelcomicslist.data.repositories.GetComicsRepositoryImpl
+import com.example.marvelcomicslist.domain.repositories.CharacterRepository
 import com.example.marvelcomicslist.domain.repositories.GetComicsRepository
 import dagger.Binds
 import dagger.Module
@@ -17,4 +19,10 @@ abstract class RepositoryModule {
     abstract fun bindComicRepository(
         getComicsByHeroImpl: GetComicsRepositoryImpl
     ): GetComicsRepository
+
+    @Binds
+    @Reusable
+    abstract fun binCharacterRepository(
+        getCharacterImpl: GetCharacterRepositoryImpl
+    ): CharacterRepository
 }

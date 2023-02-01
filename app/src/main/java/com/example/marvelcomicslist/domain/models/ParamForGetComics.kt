@@ -4,5 +4,6 @@ data class ParamForGetComics(
     val ts: Int,
     val apiKey: String,
     val hash: String,
-    val nameHero: String
+    val nameHero: String? = null,
+    val idHero: Int = 0
 )

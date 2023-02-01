@@ -11,7 +11,7 @@ class GetComicsRepositoryImpl @Inject constructor(
 ) : GetComicsRepository {
     override suspend fun getComicsByHero(params: ParamForGetComics): List<Comic> {
         return comicsService.getComicsByHero(
-            params.nameHero,
+            params.idHero,
             params.ts,
             params.apiKey,
             params.hash

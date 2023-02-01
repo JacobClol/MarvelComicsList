@@ -1,5 +1,6 @@
 package com.example.marvelcomicslist.di
 
+import com.example.marvelcomicslist.data.service.CharacterService
 import com.example.marvelcomicslist.data.service.ComicService
 import dagger.Module
 import dagger.Provides
@@ -52,6 +53,12 @@ class ServiceModule {
     fun provideMovieService(retrofit: Retrofit): ComicService{
         return retrofit.create(ComicService::class.java)
     }
+
+    @Provides
+    @Singleton
+    fun provideCharacterService(retrofit: Retrofit): CharacterService{
+        return retrofit.create(CharacterService::class.java)
+    }
 }
 
-private const val BASE_URL = "https://developer.marvel.com/"
+private const val BASE_URL = "https://gateway.marvel.com/"

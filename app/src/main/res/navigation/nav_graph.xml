@@ -2,13 +2,13 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.marvelcomicslist.ui.fragment.MainFragment"
-        android:label="fragment_main"
+        android:label="Marver Studio"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/action_mainFragment_to_menuFragment"
@@ -21,7 +21,7 @@
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.example.marvelcomicslist.ui.fragment.MenuFragment"
-        android:label="MenuFragment" >
+        android:label="Select The Hero" >
         <action
             android:id="@+id/action_menuFragment_to_comicListFragment"
             app:destination="@id/comicListFragment"
@@ -33,7 +33,7 @@
     <fragment
         android:id="@+id/comicListFragment"
         android:name="com.example.marvelcomicslist.ui.fragment.ComicListFragment"
-        android:label="ComicListFragment" >
+        android:label="Comic´s Hero" >
         <action
             android:id="@+id/action_comicListFragment_to_comicDetailFragment"
             app:destination="@id/comicDetailFragment"
@@ -48,7 +48,7 @@
     <fragment
         android:id="@+id/comicDetailFragment"
         android:name="com.example.marvelcomicslist.ui.fragment.ComicDetailFragment"
-        android:label="ComicDetailFragment"
+        android:label="Details"
         app:enterAnim="@anim/slide_in_right"
         app:exitAnim="@anim/slide_out_left"
         app:popEnterAnim="@anim/slide_in_left"
